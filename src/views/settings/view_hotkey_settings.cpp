@@ -60,6 +60,8 @@ namespace big
 			g_hotkey_service->update_hotkey("vehiclefly", g.settings.hotkeys.vehicle_flymode);
 		if (ImGui::Hotkey("CLEAR_WANTED_LEVEL"_T.data(), &g.settings.hotkeys.clear_wanted))
 			g_hotkey_service->update_hotkey("clearwantedself", g.settings.hotkeys.clear_wanted);
+		if (ImGui::Hotkey("BRING_ALL_PLAYERS"_T.data(), &g.settings.hotkeys.bringallplayers))
+			g_hotkey_service->update_hotkey("bringallplayers", g.settings.hotkeys.bringallplayers);
 
 		ImGui::PopItemWidth();
 	}
