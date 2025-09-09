@@ -37,7 +37,7 @@ namespace big
 		register_hotkey("vehiclefly", g.settings.hotkeys.vehicle_flymode, "vehiclefly"_J);
 		register_hotkey("waypoint", g.settings.hotkeys.teleport_waypoint, "waypointtp"_J);
 		register_hotkey("highlighttp", g.settings.hotkeys.teleport_selected, "highlighttp"_J);
-		register_hotkey("bringallplayers", g.settings.hotkeys.beastjump, "bringallplayers"_J);
+		register_hotkey("bringall", g.settings.hotkeys.bring_all, "bringall"_J);
 
 		g_renderer.add_wndproc_callback([this](HWND hwnd, UINT msg, WPARAM wparam, LPARAM lparam) {
 			wndproc(static_cast<eKeyState>(msg), wparam);
